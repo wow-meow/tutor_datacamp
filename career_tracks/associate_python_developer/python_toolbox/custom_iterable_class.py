@@ -18,7 +18,12 @@ class MyIterable:
 
     Methods:
         __iter__: Returns the iterator object (self).
-        __next__: Returns the next item in the sequence or raises StopIteration.
+        __next__: Returns the next integer in the sequence or raises StopIteration.
+                  Increments the counter by 1 in each call.
+        _check_limit: Checks if iteration limit is reached.
+                      Raises ValueError if counter exceeds limit.
+                      Raises StopIteration if counter equals limit.
+                      Note: This is a private method.
     """
 
     def __init__(self, limit):
@@ -56,10 +61,15 @@ class String(MyIterable):
 
     Attributes:
         str_literal (str): The string to be iterated over.
+        limit (int): Inherited from MyIterable, equals length of str_literal.
+        counter (int): Inherited from MyIterable, tracks current position.
 
     Methods:
         __init__: Initializes the String object with a given string.
+        __iter__: Inherited from MyIterable, returns self as iterator.
         __next__: Returns the next character in the string or raises StopIteration.
+                 Increments the counter by 1 in each call.
+        _check_limit: Inherited from MyIterable, checks iteration bounds.
     """
 
     def __init__(self, str_literal: str = ""):
