@@ -180,14 +180,13 @@ The output shows that both methods (using property() directly or @property decor
 
 Basic:
 
-```python
-( output_expr for iterator in iterable )
+```
+( output for iterator in iterable )
 ```
 
 Advanced:
 
-```python
-( output_expr 
-+ conditional on output for iterator in iterable 
-+ conditional on iterable )
+```
+( output [conditional on output]
+  for iterator in iterable [conditional on iterator] )
 ```
