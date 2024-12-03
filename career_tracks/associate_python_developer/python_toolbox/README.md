@@ -175,3 +175,19 @@ This is why you can:
 - Keep the actual data private: `self.__value`
 
 The output shows that both methods (using property() directly or @property decorator) create the same type of object under the hood: `<class 'property'>`.
+
+### Re-cap: list comprehensions
+
+Basic:
+
+```python
+( output_expr for iterator in iterable )
+```
+
+Advanced:
+
+```python
+( output_expr 
++ conditional on output for iterator in iterable 
++ conditional on iterable )
+```
