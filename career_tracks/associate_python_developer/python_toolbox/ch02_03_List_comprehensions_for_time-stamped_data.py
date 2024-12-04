@@ -9,7 +9,7 @@ This module demonstrates:
 """
 
 import pandas as pd
-from pprint import pprint
+# from pprint import pprint
 
 # Initialize an empty Series
 tweet_time = pd.Series(dtype=object)
