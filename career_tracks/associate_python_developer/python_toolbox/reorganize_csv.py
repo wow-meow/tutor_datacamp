@@ -52,9 +52,9 @@ def reorganize_csv(
 
 
 if __name__ == "__main__":
-    input_file = "tweets_draft.csv"
+    input_file = "./csv_files/tweets_draft.csv"
     # Create a new file instead of overwriting
-    output_file = "tweets_reorganized.csv"
+    output_file = "./csv_files/tweets_reorganized.csv"
     reorganize_csv(
         input_file, output_file, 
         colname="created_at", nrows=100, skiprows=205

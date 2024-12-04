@@ -4,7 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Initialize reader object: urb_pop_reader
-urb_pop_reader = pd.read_csv("world_ind_pop_data.csv", chunksize=1000)
+urb_pop_reader = pd.read_csv("../csv_files/world_ind_pop_data.csv", chunksize=1000)
 
 # Initialize empty DataFrame: data
 data = pd.DataFrame()

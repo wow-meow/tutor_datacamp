@@ -39,9 +39,8 @@ def plot_pop(filename: str, country_code: str) -> None:
 
 
 # Set the filename: fn
-fn = "world_ind_pop_data.csv"
-
+fn = "../csv_files/world_ind_pop_data.csv"
 # Call plot_pop for country code 'CEB'
-plot_pop(fn, 'CEB')
+plot_pop(fn, "CEB")
 # Call plot_pop for country code 'ARB'
-plot_pop(fn, 'ARB')
+plot_pop(fn, "ARB")

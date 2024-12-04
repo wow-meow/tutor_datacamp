@@ -5,8 +5,7 @@ from typing import Iterable as IterableType
 import matplotlib.pyplot as plt
 
 # Initialize reader object: df_reader
-# df_reader = pd.read_csv('ind_pop.csv', chunksize=10)
-df_reader = pd.read_csv("world_ind_pop_data.csv", chunksize=10)
+df_reader = pd.read_csv("../csv_files/world_ind_pop_data.csv", chunksize=10)
 assert isinstance(df_reader, IterableType), "`df_reader` must be an iterable"
 print(type(df_reader))
 
@@ -15,7 +14,7 @@ print(next(df_reader))
 print(next(df_reader))
 
 # Initialize reader object: urb_pop_reader
-urb_pop_reader = pd.read_csv("world_ind_pop_data.csv", chunksize=1000)
+urb_pop_reader = pd.read_csv("../csv_files/world_ind_pop_data.csv", chunksize=1000)
 
 # Get the first DataFrame chunk: df_urb_pop
 df_urb_pop = next(urb_pop_reader)

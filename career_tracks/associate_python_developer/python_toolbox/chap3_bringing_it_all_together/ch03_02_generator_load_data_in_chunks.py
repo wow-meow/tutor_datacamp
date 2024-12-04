@@ -3,7 +3,7 @@
 from typing import TextIO
 
 # Open a connection to the file
-with open("world_dev_ind.csv") as file:
+with open("../csv_files/world_ind_pop_data.csv") as file:
     # Skip the column names
     file.readline()
 
@@ -29,7 +29,7 @@ with open("world_dev_ind.csv") as file:
 print(counts_dict)
 
 
-with open("world_dev_ind.csv") as file:
+with open("../csv_files/world_ind_pop_data.csv") as file:
     data = file.readline()
     print()
     print(type(data))
@@ -58,7 +58,7 @@ def read_large_file(file_object: TextIO) -> str:
 
 
 # Open a connection to the file
-with open("world_dev_ind.csv") as file:
+with open("../csv_files/world_ind_pop_data.csv") as file:
     # Create a generator object for the file: gen_file
     gen_file = read_large_file(file)
 
@@ -74,7 +74,7 @@ with open("world_dev_ind.csv") as file:
 counts_dict = {}
 
 # Open a connection to the file
-with open("world_dev_ind.csv") as file:
+with open("../csv_files/world_ind_pop_data.csv") as file:
     # Iterate over the generator from read_large_file()
     for line in read_large_file(file):
         row = line.split(",")
