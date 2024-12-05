@@ -1,5 +1,23 @@
 #!/usr/bin/env python3
 
+"""Demonstrates list features and usage in Python.
+
+This module shows various list operations and characteristics including:
+- Creating lists using square brackets
+- List methods like extend(), index(), and pop()
+- List comprehensions for data transformation
+- Working with nested lists (records)
+
+Key characteristics of List:
+- Mutable - contents can be modified after creation
+- Maintains insertion order of elements
+- Supports indexing and slicing
+- Can contain mixed data types
+- Dynamic sizing - grows and shrinks as needed
+
+The examples use real-world data (popular baby names) to demonstrate practical list usage.
+"""
+
 # Create a list called baby_names with the names 'Ximena', 'Aliza', 'Ayden', and 'Calvin'.
 baby_names = ["Ximena", "Aliza", "Ayden", "Calvin"]
 

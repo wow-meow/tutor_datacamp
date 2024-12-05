@@ -1,11 +1,31 @@
 #!/usr/bin/env python3
 
-# Features of tuple: 
-# - limmutable
-# - easy to process, more memory efficient than list
-# - hold data in order
-# - index
-# - unpackable
+"""Demonstrates tuple features and usage in Python.
+
+This module shows various tuple operations and characteristics including:
+- Creating tuples using parentheses and trailing commas
+- Accessing tuple methods like index() and count()
+- Using zip() to combine lists into tuples
+- Tuple unpacking with multiple assignment
+- Identifying accidental tuple creation from trailing commas
+
+Key characteristics of Tuple:
+- Immutable - contents cannot be modified after creation
+- Memory efficient compared to lists
+- Maintains insertion order of elements
+- Supports indexing and slicing
+- Allows unpacking into multiple variables
+
+The examples use real-world data (popular baby names) to demonstrate practical tuple usage.
+"""
+
+a_tup = ('b', 'a', 'a', 'c', 'a')
+print(a_tup)
+print(a_tup.index('a'))
+print(a_tup.count('a'))
+print(a_tup[1:4])
+print(a_tup[1:4].index('a'))
+print(a_tup[1:4].count('a'))
 
 girl_names = [
     'Jada', 'Emily', 'Ava', 'Serenity', 'Claire',
